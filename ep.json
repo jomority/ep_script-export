@@ -1,0 +1,11 @@
+{
+	"parts": [
+		{
+			"name": "script-export",
+			"hooks": {
+				"eejsBlock_exportColumn": "ep_script-export/index",
+				"expressCreateServer": "ep_script-export/index"
+			}
+		}
+	]
+}

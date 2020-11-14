@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<% if (!(locals.script) || script === "preview" ) { %>
+	<a href="?export=do"><button>Export</button></a>
+<% } else { %>
+	<h1>exported!</h1>
+<% } %>
+<% if (locals.script) { %>
+	<% if (stderr != "") { %>
+		<h1><%= script %>-script output</h1>
+		<pre style="background-color: #E0E0E0;"><%= stderr %></pre>
+	<% } %>
+	<h1>preview</h1>
+	<div style="background-color: #E0E0E0;">
+<%- preview %>
+	</div>
+<% } else { %>
+	<h1>no preview available</h1>
+<% } %>
+</body>
+</html>
