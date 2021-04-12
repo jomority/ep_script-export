@@ -1,6 +1,6 @@
 {
 	"name": "ep_script-export",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Export pads to a script",
 	"author": "Moritz Jordan <jomority@openotter.com>",
 	"contributors": [],
