@@ -67,7 +67,7 @@ function callScript(script, html) {
 exports.expressCreateServer = function(hook_name, args, cb) {
 	args.app.get('/p/:pad/:rev?/export/script', function(req, res) {
 		var padID = req.params.pad;
-		var revision = req.params.rev ? req.params.rev : null;
+		var revision = req.params.rev ? req.params.rev : undefined;
 
 		var scripts = getExportScripts(padID);
 
